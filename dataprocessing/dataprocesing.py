@@ -35,4 +35,9 @@ y = le.fit_transform(y)
 from sklearn.model_selection import train_test_split
 x_train , x_test , y_train , y_test = train_test_split(x,y,test_size=0.2,random_state=1)
 #Feature Scaling
+from sklearn.preprocessing import StandardScaler
+ss = StandardScaler()
+x_train[:,3:] = ss.fit_transform(x_train[: , 3:])
+x_test[:,3:]=ss.transform(x_test[:,3:])
+
 
