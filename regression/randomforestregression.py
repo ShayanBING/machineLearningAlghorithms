@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestRegressor
 regressor = RandomForestRegressor(n_estimators=10,random_state=0)
 regressor.fit(x,y)
 
-print(regressor.predict([[6.5],[4.5]]))
+print(regressor.predict([[6.5]]))
 
 
 X_grid = np.arange(min(x), max(x), 0.01)
