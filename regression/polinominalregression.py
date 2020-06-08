@@ -21,7 +21,7 @@ lin_reg2.fit(x_poly,y)
 #Visualising the Linear Regression results
 plt.scatter(x,y,color='red')
 plt.plot(x,lin_reg.predict(x),color='blue')
-plt.title('Truth or Bluff (Linear Regression)')
+plt.title('Truth or Bluff (Polinominal Regression)')
 plt.xlabel('Position Level')
 plt.ylabel("Salary")
 plt.show()
